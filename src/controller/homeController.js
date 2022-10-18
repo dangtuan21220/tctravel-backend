@@ -7,7 +7,8 @@ let getHomepage = async (req, res) => {
   //    return res.render("index.ejs", { dataUser: data });
   // });
 
-  const [rows] = await pool.execute("SELECT * FROM `users`");
+  const user = await pool.execute("SELECT * FROM `users`");
+  console.log(user);
   return res.render("index.ejs", { dataUser: rows });
 };
 
