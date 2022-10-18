@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update user</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+</head>
+<body>
+    <div class="create-user">
+        <form action="/update-user" method="POST">
+            <h3>Edit a user:</h3>
+            <input type="text" hidden value="<%=dataUser.id %>" name="id">
+            <div>
+              <label for="">First Name:</label>
+              <input type="text" name="firstName" value="<%= dataUser.firstName %>" />
+            </div>
+            <div>
+              <label for="">Last Name:</label>
+              <input type="text" name="lastName" value="<%= dataUser.lastName %>" />
+            </div>
+            <div>
+              <label for="">Email:</label>
+              <input type="email" name="email" value="<%= dataUser.email %>" />
+            </div>
+            <div>
+              <label for="">Address:</label>
+              <input type="text" name="address" value="<%= dataUser.address %>" />
+            </div>
+            <div>
+              <button type="submit" class="btn-submit">Save</button>
+              <button>
+                <a href="/">Cancel</a>
+              </button>
+            </div>
+          </form>
+    </div>
+</body>
+</html>

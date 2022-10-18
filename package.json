@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-hoidanit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangtuan21220/nodejs-hoidanit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dangtuan21220/nodejs-hoidanit/issues"
+  },
+  "homepage": "https://github.com/dangtuan21220/nodejs-hoidanit#readme",
+  "dependencies": {
+    "@babel/core": "^7.19.1",
+    "@babel/node": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.2",
+    "ejs": "3.1.6",
+    "express": "4.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20"
+  }
+}
