@@ -16,6 +16,7 @@ const initAPIRoute = (app) => {
     router.post("/register", userController.handleRegister);
     // addressController
     router.get("/getAddress", addressController.getAddress);
+    router.post("/rating", addressController.addRating);
 
     return app.use("/api/v1/", router);
 };

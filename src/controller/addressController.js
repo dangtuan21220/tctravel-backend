@@ -8,7 +8,13 @@ let getAddress = async (req, res) => {
         data: address,
     });
 };
+let addRating = async (req, res) => {
+    const data = req.body;
+    const message = await addressService.addMyRating(data);
+    return res.status(200).json(message);
+};
 
 module.exports = {
     getAddress,
+    addRating,
 };
